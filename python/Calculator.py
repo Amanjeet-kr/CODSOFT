@@ -1,9 +1,6 @@
-# Simple Calculator with Loop - CodSoft Task 2
-
 print("=== Simple Calculator ===")
 
 while True:
-    # Taking user inputs
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
 
@@ -15,7 +12,6 @@ while True:
     
     choice = input("Enter your choice (+, -, *, /): ")
 
-    # Performing the operation
     if choice == '+':
         print(f"Result: {num1} + {num2} = {num1 + num2}")
     elif choice == '-':
@@ -30,7 +26,6 @@ while True:
     else:
         print("Invalid operation choice!")
 
-    # Ask user if they want another calculation
     again = input("\nDo you want to perform another calculation? (yes/no): ").lower()
     if again != 'yes':
         print("Thank you for using the calculator!")
